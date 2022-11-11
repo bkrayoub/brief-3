@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 // PROMOTIONS ROUTES
 
-Route::get('', [Promotion_Controller::class, 'index'])->name('index');
+Route::get('', [Promotion_Controller::class, 'index']);
 
 Route::get('promotions', [Promotion_Controller::class, 'index'])->name('index');
 
