@@ -11,8 +11,8 @@
     <title>Add Brief</title>
 </head>
 <body>
-    <div class="container text-center border border-2 rounded">
-        <br><h1 >Brief Add </h1><br><br>
+    <div class="container">
+        <h1>Brief Add </h1>
         <table class="table">
             <form action="{{url('briefs_insert')}}" method="POST">
             @csrf
@@ -37,7 +37,7 @@
             </tbody>
         
         </table>
-        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add Brief</button>
+        <button type="submit" class="submit-btn"><i class="fa-solid fa-plus"></i> Add Brief</button>
 
     </div>
 </body>
