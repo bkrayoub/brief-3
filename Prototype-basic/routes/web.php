@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 
 // PROMOTIONS ROUTES
 
+Route::get('', [Promotion_Controller::class, 'index'])->name('index');
+
 Route::get('promotions', [Promotion_Controller::class, 'index'])->name('index');
 
 Route::get('promotions/add', [Promotion_Controller::class, 'add_promotion'])->name('add-promotion');
