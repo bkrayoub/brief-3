@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="/student.css">
-    <link rel="icon" href="/icon.webp">
+    <link rel="stylesheet" href="app.css">
     <script src="https://kit.fontawesome.com/8b497b2419.js" crossorigin="anonymous"></script>
     <title>Edit Brief</title>
 </head>
 <body>
 
-    
 
-    <div class="container text-center border border-2 rounded">
+
+    <div class="container">
         <br><h1 >Brief edit </h1><br><br>
         <table class="table">
             @foreach($data as $row)
@@ -30,21 +28,21 @@
                 <tr>
                     <th scope="row">Creation date: </th>
                     <td><input type="date" value="{{$row->creation_date}}" name="creation_date"><br></td>
-                    
+
                 </tr>
                 <tr>
                     <th scope="row">Delivery date: </th>
                     <td><input type="date" value="{{$row->livration_date}}" name="livration_date"><br></td>
-                    
+
                 </tr>
-                
+
             </tbody>
             @endforeach
         </table>
         <button type="submit" class="btn btn-primary"><i class="fa-solid fa-plus"></i>Update Brief</button>
             </form>
     </div>
-    
+
     <table class="table table-primary table-striped table-hover">
         <thead>
             <tr>
